@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static  %}
+
+{% block content %}
+{% include 'share/_navbar.html' %}
+<h1>
+	Hello Django!
+</h1>
+<a href="{% url "link:first" %}">first</a>
+<a href="{% url "link:second" %}">second</a>
+<a href="{% url "link:third" %}">third</a>
+<img src="{% static 'image/ganjang.jpg' %}" alt="">
+{% endblock %}
