@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>신청 과목</legend>
+            <ul>
+                <p>이 달에 신청할 과목을 선택하세요.<small>(1과목만 가능)</small></p>
+                    <label for="subject"></label>
+                    <input type="radio" id="subject" name="subject" value="speaking">회화
+                    <input type="radio" id="subject" name="subject" value="grammar">문법
+                    <input type="radio" id="subject" name="subject" value="writing">작문
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>메일링</legend>
+            <ul>
+                <p>메일로 받고 싶은 뉴스 주제를 선택해주세요.<small>(복수 선택 가능)</p>          
+                <label for="mailing1"></label>
+                <label for="mailing2"></label>
+                <label for="mailing3"></label>
+                <input type="checkbox" id="mailing1" value="news">해외 단신
+                <input type="checkbox" id="mailing2" value="dialog">5분회화
+                <input type="checkbox" id="mailing3" value="pops">모닝 팝스
+            
+            </ul>
+        </fieldset>
+    </form>    
+</body>
+</html>
