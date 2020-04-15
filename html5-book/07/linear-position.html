@@ -9,6 +9,11 @@
 			height:300px;
 			border-radius:10px;
 		}
+		div {
+			width: 500px;
+			height: 300px;
+			border-radius: 10px;
+		}
   	.grad {
   		background: blue; /* css3 미지원 브라우저 */
   		background: -webkit-linear-gradient(left top, blue, white); /* 초기 모던 브라우저 */
@@ -16,6 +21,13 @@
   		background: -o-linear-gradient(right bottom, blue, white); /* 초기 모던 브라우저 */
   		background: linear-gradient(to right bottom, blue, white); /* 최신 모던 브라우저 */
   	}
+	.grad {
+		background: blue;
+		background: -webkit-linear-gradient(left top, blue, white);
+		background: -moz-linear-gradient(right bottom, blue, white);
+		background: -o-linear-gradient(right bottom, blue, white);
+		background: linear-gradient(to right bottom, blue, white);
+	}
   </style>
 </head>
 <body>
