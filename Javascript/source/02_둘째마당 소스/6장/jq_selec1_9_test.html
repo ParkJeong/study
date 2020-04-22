@@ -5,9 +5,15 @@
 <title> 선택자 </title>  
 <script src="js/jquery.js"></script>
 <script>
-$(function(){
+	$(function(){
+		$("#wrap > h1").css("border", "2px dashed #f00");
 
-});
+		$("#wrap > section").children()
+		.css({
+			"background-color":"yellow",
+			"border":"2px solid #f00"
+		});
+	});
 </script>
 </head>
 <body>

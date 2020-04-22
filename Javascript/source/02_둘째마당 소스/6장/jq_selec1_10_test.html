@@ -15,7 +15,13 @@ $(function(){
 		"border":"2px dashed #f00"
 	}
 
+	$(".txt").prev()
+	.css(style_1);
 
+	$(".txt + p").css(style_2);
+
+	$(".txt").next().next()
+	.css(style_2);
 });
 </script>
 </head>

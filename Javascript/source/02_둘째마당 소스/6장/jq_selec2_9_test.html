@@ -12,6 +12,17 @@ $(function(){
 			"name":"정부장", 
 			"area":"서울"
 	}
+	var idxNum = $.inArray("부산", arr1);
+	console.log(idxNum);
+
+	var okArray1 = $.isArray(arr1);
+	var okArray2 = $.isArray(obj);
+	console.log(okArray1);
+	console.log(okArray2);
+
+	$.merge(arr2, arr1);
+	console.log(arr2);
+	
 	
 });
 </script>

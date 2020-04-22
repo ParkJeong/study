@@ -6,7 +6,15 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
+
+	var result_1 = $("#sec_").html();
+	console.log(result_1);
 	
+	$("#sec_1 p").html("<a href=\"#\">Text1</a>")
+
+	var result_2 = $("#sec_2").text();
+	console.log(result_2);
+	$("#sec_2 h2").text("text()");
 });
 </script>
 </head>
