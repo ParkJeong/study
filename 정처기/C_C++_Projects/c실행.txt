@@ -1,0 +1,2 @@
+ctrl+alt+c		컴파일
+ctrl+alt+r		실행

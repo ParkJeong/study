@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<h1>
-	Hello Django!
-</h1>
-<a href="{% url "link:first" %}">first</a>
-<a href="{% url "link:second" %}">second</a>
-<a href="{% url "link:third" %}">third</a>
+
+<div class="container">
+	<h1>
+		정훈's blog
+	</h1>
+	{% for post in posts %}
+	<div class="col-md-5 col-12">
+		<div class="card" style="width: 18rem; margin-top: 20px;">
+			<div class="card-body">
+				<h5 class="card-title">{{ post.title }}</h5>
+				<p class="card-text">{{ post.content }}</p>
+				<p>{{ post.created_at}}</p>
+				<a href="{% url 'posts:show' post.id %}" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
 {% endblock %}
