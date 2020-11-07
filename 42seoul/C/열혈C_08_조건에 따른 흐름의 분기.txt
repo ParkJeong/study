@@ -1,0 +1,53 @@
+if( num1 > num2){
+	...
+} else if(num1 > 100){
+	...
+}
+else{
+	....
+}
+
+if ... else if ... else문은 if~else문을 중첩시킨 형태이다.
+
+
+삼항 연산자
+(num1 > num2) ? (num1) : (num2);
+
+
+continue문
+실행중인 위치에 상관없이 반복문의 조건검사 위치로 이동을 한다.
+
+break문
+break문을 가장 가까이서 감싸고 있는 반복문 하나를 빠져 나오게 된다.
+
+
+switch문
+switch문에서 break문은 선택적으로 입력을 한다.
+switch(num){
+	case 1:
+		break;
+	case 2:
+		break;
+	default:
+}
+
+
+분기의 경우 수가 많아지면 가급적 switch문으로 구현을 한다.
+switch문의 장점은 if else문보다 간결해 보인다는 것이다.
+
+switch문으로 표현하기 애매한 상황에서는 if else문을 사용해야 한다.
+
+
+goto문
+알아두기만 하고 쓰지말자
+
+int main(void)
+{
+	rabbit:		// 위치지정에 사용된 rabbit이라는 이름의 레이블
+		...
+		goto rabbit; // 레이블 rabbit의 위치로 이동
+}
+
+
+
+
