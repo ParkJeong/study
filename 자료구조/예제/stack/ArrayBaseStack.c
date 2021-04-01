@@ -1,5 +1,6 @@
-#include "ArrayBaseStack.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include "ArrayBaseStack.h"
 
 void	StackInit(Stack *pstack)
 {
@@ -36,4 +37,13 @@ Data	SPop(Stack *pstack)
 	return (pstack->stackArr[rIdx]);
 }
 
-Data
+Data	SPeek(Stack *pstack)
+{
+	if (SIsEmpty(pstack))
+	{
+		printf("Stack Memory Error!\n");
+		exit(-1);
+	}
+
+	return (pstack->stackArr[pstack->topIndex]);
+}
